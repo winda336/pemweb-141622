@@ -1,0 +1,2 @@
+<?php require 'config.php';$title='Berhasil';include 'header.php';?>
+<section><div class="wrap"><div class="box" style="text-align:center"><h2>Pembayaran Berhasil 🎉</h2><p>Simpan kode booking kamu:</p><p class="kode"><?=e($_GET['kode']??'')?></p><p>Gunakan kode ini dan email/telepon untuk cek status.</p><a class="btn" href="status.php">Cek Status</a></div></div></section><?php include 'footer.php';
