@@ -1,0 +1,63 @@
+/* Brand: Lembah Raras Glamping */
+:root{--hijau:#2F4A3A;--hijau-muda:#E3EBE1;--pasir:#F4EDE1;--terakota:#C8643C;--arang:#2B2B2B;--putih:#fff;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--arang);background:var(--pasir);line-height:1.65}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;color:var(--hijau);line-height:1.2}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+section h2{font-size:1.9rem;margin-bottom:8px}
+.sub{color:#555;margin-bottom:28px}
+/* navbar */
+header{background:var(--hijau);color:var(--putih);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Fraunces',Georgia,serif;font-size:1.25rem;font-weight:700}
+.menu{display:flex;gap:22px;align-items:center}
+.menu a:hover{color:#F2C9A8}
+#tog,.burger{display:none}
+@media(max-width:760px){
+ .burger{display:block;cursor:pointer;font-size:1.6rem}
+ .menu{display:none;position:absolute;top:64px;left:0;right:0;background:var(--hijau);flex-direction:column;padding:18px 20px;gap:14px}
+ #tog:checked~.menu{display:flex}
+}
+/* tombol */
+.btn{display:inline-block;background:var(--terakota);color:var(--putih);padding:11px 24px;border-radius:999px;font-weight:600;border:0;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.btn.alt{background:transparent;border:2px solid var(--putih)}
+/* hero */
+.hero{background:linear-gradient(rgba(20,35,28,.42),rgba(20,35,28,.42)),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAwIDgwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFmM2EzYSIvPjxzdG9wIG9mZnNldD0iLjU1IiBzdG9wLWNvbG9yPSIjNmY4ZjdlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjBjOWEwIi8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9ImciPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZDlhMCIgc3RvcC1vcGFjaXR5PSIuOSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZDlhMCIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48cGF0aCBpZD0idCIgZD0iTTAtMTEwTDI2LTU1SDEyTDM0LTEwSC0zNEwtMTItNTVILTI2WiIvPjwvZGVmcz48cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjcykiLz48Y2lyY2xlIGN4PSIxMjMwIiBjeT0iNDMwIiByPSIxNTAiIGZpbGw9InVybCgjZykiLz48Y2lyY2xlIGN4PSIxMjMwIiBjeT0iNDMwIiByPSI2MiIgZmlsbD0iI2ZiZTNiZiIvPjxwYXRoIGQ9Ik0wIDUyMEwxODAgMzgwIDMyMCA0NzAgNTIwIDMyMCA3MjAgNDgwIDkwMCAzNjAgMTEwMCA0OTAgMTMwMCAzNDAgMTQ2MCA0NTAgMTYwMCAzODBWODAwSDBaIiBmaWxsPSIjN2Q5YzhhIiBvcGFjaXR5PSIuODUiLz48cGF0aCBkPSJNMCA2MDBMMjIwIDQ1MCAzODAgNTYwIDYwMCA0MjAgODIwIDU4MCAxMDQwIDQ0MCAxMjQwIDU5MCAxNDIwIDQ4MCAxNjAwIDU2MFY4MDBIMFoiIGZpbGw9IiM0Zjc2NjAiLz48cGF0aCBkPSJNMCA3MDBMMjYwIDU2MCA0ODAgNjgwIDc2MCA1NDAgMTAyMCA2OTAgMTMwMCA1NzAgMTYwMCA2OTBWODAwSDBaIiBmaWxsPSIjMkY0QTNBIi8+PHBhdGggZD0iTTAgNzQ1UTQwMCA3MTUgODAwIDc0NVQxNjAwIDc0MFY4MDBIMFoiIGZpbGw9IiMxYzMwMjciLz48ZyBmaWxsPSIjMWMzMDI3Ij48dXNlIGhyZWY9IiN0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MCA3NzApIHNjYWxlKDEuMSkiLz48dXNlIGhyZWY9IiN0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOTAgNzY1KSBzY2FsZSguOCkiLz48dXNlIGhyZWY9IiN0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMDAgNzcyKSBzY2FsZSgxKSIvPjx1c2UgaHJlZj0iI3QiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzMzAgNzY4KSBzY2FsZSgxLjIpIi8+PHVzZSBocmVmPSIjdCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQ0MCA3NzIpIHNjYWxlKC45KSIvPjx1c2UgaHJlZj0iI3QiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1MzAgNzY2KSBzY2FsZSgxLjEpIi8+PC9nPjxjaXJjbGUgY3g9IjEwMDAiIGN5PSI3MzUiIHI9IjU1IiBmaWxsPSJ1cmwoI2cpIi8+PHBhdGggZD0iTTk2MCA3NDVBNDAgNDAgMCAwIDEgMTA0MCA3NDVaIiBmaWxsPSIjZjJjOWE4Ii8+PC9zdmc+") center bottom/cover no-repeat;color:var(--putih);padding:110px 0 140px;text-align:center}
+.hero h1{color:var(--putih);font-size:clamp(2rem,6vw,3.4rem);margin-bottom:14px}
+.hero p{max-width:560px;margin:0 auto 26px}
+.hero .btn+.btn{margin-left:10px}
+/* kartu */
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--putih);border-radius:var(--r);overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.07)}
+.card .img{height:160px;background:linear-gradient(135deg,#7a9a80,#d9b48a)}
+.card .body{padding:18px}
+.card h3{font-size:1.2rem;margin-bottom:6px}
+.harga{color:var(--terakota);font-weight:700;margin:8px 0 12px}
+.meta{font-size:.88rem;color:#666}
+.langkah{counter-reset:n}
+.langkah .card{padding:22px;position:relative}
+.langkah .card::before{counter-increment:n;content:counter(n);display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:var(--hijau);color:var(--putih);margin-bottom:10px;font-weight:700}
+.alt-bg{background:var(--hijau-muda)}
+/* artikel */
+.artikel{background:var(--putih);border-radius:var(--r);padding:28px;margin-bottom:26px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.artikel h2{font-size:1.6rem}
+.artikel p,.artikel ul{margin-top:12px}
+.artikel ul{padding-left:22px}
+.tgl{font-size:.85rem;color:#777}
+/* footer */
+footer{background:var(--arang);color:#ddd;padding:36px 0;font-size:.92rem}
+footer .grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+footer h3{color:var(--putih);font-size:1.05rem;margin-bottom:8px}
+.copy{text-align:center;margin-top:24px;color:#999}
+/* form, tabel, notifikasi */
+.box{background:var(--putih);border-radius:var(--r);padding:26px;max-width:560px;margin:0 auto;box-shadow:0 4px 14px rgba(0,0,0,.07)}
+label{display:block;margin-top:12px;font-weight:600;font-size:.92rem}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid #ccc;border-radius:10px;font:inherit;margin-top:4px}
+input[type=checkbox]{width:auto}
+.err{background:#fde8e4;color:#8a2a14;padding:10px 14px;border-radius:10px;margin-bottom:12px}
+.ok{background:#e3f1e3;color:#1f5a2a;padding:10px 14px;border-radius:10px;margin-bottom:12px}
+.tbl{width:100%;border-collapse:collapse;background:#fff}.tbl td,.tbl th{padding:9px;border-bottom:1px solid #eee;text-align:left;font-size:.9rem}
+.kode{font-size:1.6rem;font-weight:700;color:var(--terakota);letter-spacing:1px}
